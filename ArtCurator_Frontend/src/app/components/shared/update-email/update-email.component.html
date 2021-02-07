@@ -1,0 +1,51 @@
+<div *ngIf="isSeller">
+  <app-nav-seller></app-nav-seller>
+</div>
+
+<div *ngIf="isBuyer">
+  <app-nav-user></app-nav-user>
+</div>
+
+<hr />
+
+<div *ngIf="isUpdated">
+  <h3>Email updated.</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-5 offset-md-4">
+    <div class="guest-form-card card">
+
+      <div class="card-header text-center">
+        <h2>Change Email Id</h2>
+      </div>
+
+      <div class="card-body">
+        <form [formGroup]="updateEmailForm" (ngSubmit)="updateEmail()">
+
+
+
+          <div class="form-group">
+            <label for="newEmail">New Email ID</label>
+            <input
+              type="newEmail"
+              id="newEmail"
+              class="form-control"
+              [ngClass]="{ 'is-invalid': updateEmailForm.get('newEmail').touched && updateEmailForm.get('newEmail').invalid }"
+              formControlName="newEmail"
+            />
+            <span class="invalid-feedback">
+              <span *ngIf="updateEmailForm.get('newEmail').hasError('required')">Email can't be blank.</span>
+              <span *ngIf="updateEmailForm.get('newEmail').hasError('email')">Email must be valid.</span>
+            </span>
+          </div>
+
+          <button class="btn btn-primary btn-block" [disabled]="updateEmailForm.invalid" >Submit</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

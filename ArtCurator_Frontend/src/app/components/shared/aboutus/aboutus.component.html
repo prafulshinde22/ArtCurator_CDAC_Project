@@ -1,0 +1,85 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+<div *ngIf="isSeller">
+    <app-nav-seller></app-nav-seller>
+</div>
+
+<div *ngIf="isBuyer">
+    <app-nav-user></app-nav-user>
+</div>
+
+<div *ngIf="isBuyer === false && isSeller === false">
+    <app-nav></app-nav>
+</div>
+
+<hr />
+
+<div class="aboutus-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="aboutus">
+                    <h2 class="aboutus-title">About Us</h2>
+                    <p class="aboutus-text">ArtCurator features the world’s leading galleries, museum collections,
+                        foundations, artist estates and art fairs all in one place. Our growing database of great works
+                        of art, architecture, and design by artists spans historical, modern, and contemporary works and
+                        includes one of the largest online database of contemporary art. ArtCurator is used by art
+                        lovers, museum-goers, patrons, collectors, students, and educators to discover, learn about, and
+                        collect art.</p>
+
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+            </div>
+            <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="feature">
+                    <div class="feature-box">
+                        <div class="clearfix">
+                            <div class="iconset">
+                                <span class="glyphicon glyphicon-cog icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Work with heart</h4>
+                                <p>We help you discover an unparalleled selection of art by artists from around the
+                                    world to suit all budgets, styles, and spaces.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="clearfix">
+                            <div class="iconset">
+                                <span class="glyphicon glyphicon-cog icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Reliable services</h4>
+                                <p>Our 7-day 100% money-back guarantee allows you to buy with confidence. If you’re not
+                                    satisfied with your purchase, return it and we’ll help you find a work you love.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="clearfix">
+                            <div class="iconset">
+                                <span class="glyphicon glyphicon-cog icon"></span>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Great support</h4>
+                                <p>We offer 24/7 helpline to our valued customers to enhance their shopping experience
+                                    with us.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <app-footer></app-footer>
+</footer>

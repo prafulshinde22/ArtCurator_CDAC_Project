@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.cart-item {
+  font-size: small;
+}
+
+.filters {
+  font-size: small;
+}
+
+.card, .form-control, .btn {
+  border-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.product-btn {
+  font-size: smaller;
+}
+
+.guest-form-card h2 {
+  text-transform: uppercase;
+  font-size: medium;
+}
+
+.guest-form-card label {
+  font-size: medium;
+}
+
+.btn-primary.disabled, .btn-primary:disabled,.btn-primary:enabled {
+  cursor: not-allowed;
+  background-color:rgb(141, 204, 233);
+  color: black;
+}
+
+.btn-primary:enabled {
+  background-color:rgb(103, 191, 232);
+  color: black;
+
+}
+
+.card-header{
+  background-color:rgb(131, 201, 233);
+
+}

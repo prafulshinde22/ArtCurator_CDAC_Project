@@ -1,0 +1,48 @@
+<div *ngIf="isSeller">
+    <app-nav-seller></app-nav-seller>
+</div>
+
+<div *ngIf="isBuyer">
+    <app-nav-user></app-nav-user>
+</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-5 offset-md-4">
+        <div class="guest-form-card card">
+            <div class="card-header text-center">
+                <h1>My Info</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <span class="input-group-text" id="addon-wrapping">Name : {{user.name}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Email : {{user.email}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Phone : {{user.phone}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Date of birth : {{user.dob}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Apartment : {{address[0].apartment}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Street : {{address[0].street}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">City : {{address[0].city}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">State : {{address[0].state}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Country : {{address[0].country}}</span>
+                    <hr>
+                    <span class="input-group-text" id="addon-wrapping">Zip : {{address[0].pin}}</span>
+                    <hr>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr>
+<app-footer></app-footer>

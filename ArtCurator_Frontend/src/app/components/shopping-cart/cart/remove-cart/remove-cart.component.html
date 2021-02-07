@@ -1,0 +1,24 @@
+<app-nav-user></app-nav-user>
+<hr>
+<div class="container">
+  <div class="row">
+    <div *ngIf="cartItemDeleted">
+      <h2>Deleting From Cart...</h2>
+    </div>
+  </div>
+
+<div class="container" style="max-width: 500px;">
+    <h2 class="text-center">Remove From Cart</h2>
+    <form>
+        <div class="form-group">
+            <label for="id">Name:</label>
+            <input type="id" [(ngModel)]="name" placeholder={{name}} name="id" class="form-control" id="id" readonly>
+        </div>
+        <button class="btn btn-success" (click)="deleteitem()">Confirm Remove</button>
+    </form>
+    <br>
+    <a routerLink="/cart" class="btn btn-outline-info">Back to home page</a>
+</div>
+
+<hr>
+<app-footer></app-footer>

@@ -1,0 +1,24 @@
+<app-nav-seller></app-nav-seller>
+<hr>
+<div class="container">
+  <div class="row">
+    <div *ngIf="productDeleted">
+      <h2>Deleting Art...</h2>
+    </div>
+  </div>
+
+<div class="container" style="max-width: 500px;">
+    <h2 class="text-center">Remove Art</h2>
+    <form>
+        <div class="form-group">
+            <label for="id">Name:</label>
+            <input type="id" [(ngModel)]="name" placeholder={{name}} name="id" class="form-control" id="id" readonly>
+        </div>
+        <button class="btn btn-success" (click)="deleteProd()">Confirm delete</button>
+    </form>
+    <br>
+    <a routerLink="/sellerhome" class="btn btn-outline-info">Back to home page</a>
+</div>
+
+<hr>
+<app-footer></app-footer>

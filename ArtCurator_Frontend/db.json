@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 10000,
+      "imageUrl": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 2000,
+      "imageUrl": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 3,
+      "name": "Product 3",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 30000,
+      "imageUrl": "https://images.unsplash.com/photo-1549289524-06cf8837ace5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 4,
+      "name": "Product 4",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 4000,
+      "imageUrl": "https://images.unsplash.com/photo-1561059488-916d69792237?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTF8fHBhaW50aW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 5,
+      "name": "Product 5",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 3700,
+      "imageUrl": "https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTJ8fHBhaW50aW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 6,
+      "name": "Product 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 7899,
+      "imageUrl": "https://images.unsplash.com/photo-1531489956451-20957fab52f2?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fHBhaW50aW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": 7,
+      "name": "Product 7",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+      "price": 1900,
+      "imageUrl": "https://images.unsplash.com/photo-1530903677198-7c9f3577a63e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjB8fHBhaW50aW5nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    }
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 1,
+        "name": "Product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 10000,
+        "imageUrl": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 1
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 2000,
+        "imageUrl": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 2
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 30000,
+        "imageUrl": "https://images.unsplash.com/photo-1549289524-06cf8837ace5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 3,
+        "name": "Product 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 30000,
+        "imageUrl": "https://images.unsplash.com/photo-1549289524-06cf8837ace5?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 4
+    },
+    {
+      "product": {
+        "id": 2,
+        "name": "Product 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 2000,
+        "imageUrl": "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 5
+    },
+    {
+      "product": {
+        "id": 1,
+        "name": "Product 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse convallis suscipit placerat. Duis ornare, dui sit amet ornare commodo, nibh lacus malesuada elit, nec pellentesque ex massa mollis arcu. Phasellus scelerisque, lorem at euismod consectetur, sapien purus accumsan lectus, ac fermentum nibh velit eget mi.",
+        "price": 10000,
+        "imageUrl": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGFpbnRpbmd8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+      },
+      "id": 6
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,130 @@
+<!-- Default form contact -->
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div *ngIf="isSeller">
+    <app-nav-seller></app-nav-seller>
+  </div>
+
+  <div *ngIf="isBuyer">
+    <app-nav-user></app-nav-user>
+  </div>
+
+  <div *ngIf="isBuyer === false && isSeller === false">
+    <app-nav></app-nav>
+  </div>
+
+  <hr />
+  <section id="contact">
+    <div class="container">
+      <h3 class="text-center text-uppercase">contact us</h3>
+
+
+
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-phone fa-5x mb-3" aria-hidden="true"></i>
+              <h4 class="text-uppercase mb-5">call us</h4>
+              <p>+91-9876543210,+91-9987654321</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-map-marker fa-5x mb-3" aria-hidden="true"></i>
+              <h4 class="text-uppercase mb-5">office location</h4>
+              <address>CDAC ACTS,Panchavati,Pune</address>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-3 my-5">
+          <div class="card border-0">
+            <div class="card-body text-center">
+              <i class="fa fa-globe fa-5x mb-3" aria-hidden="true"></i>
+              <h4 class="text-uppercase mb-5">email</h4>
+              <p>artcurator@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+<div class="col-md-4 offset-md-4">
+  <div class="guest-form-card card">
+
+    <div class="card-header text-center">
+      <h2>Send a message</h2>
+    </div>
+
+    <!-- Name -->
+    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name">
+
+    <!-- Email -->
+    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail">
+
+    <!-- Subject -->
+    <label></label>
+    <select class="browser-default custom-select mb-4">
+      <option value="" disabled>Choose option</option>
+      <option value="1" selected>Feedback</option>
+      <option value="2">Report a bug</option>
+      <option value="3">Feature request</option>
+      <option value="4">Feature request</option>
+    </select>
+
+    <!-- Message -->
+    <div class="form-group">
+      <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3"
+        placeholder="Message"></textarea>
+    </div>
+
+
+
+
+    <!-- Send button -->
+    <button class="w-100 btn btn-primary" type="submit">Send</button>
+
+  </div>
+</div>
+
+<footer>
+  <app-footer></app-footer>
+</footer>

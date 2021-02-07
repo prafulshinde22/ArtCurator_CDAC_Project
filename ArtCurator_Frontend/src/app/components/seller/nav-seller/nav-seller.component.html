@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #68c0ff;">
+  <!-- Navbar content -->
+
+  <a class="navbar-brand" href="#" routerLink='/sellerhome'>ArtCurator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+      <li ngbDropdown class="nav-item dropdown ">
+        <a ngbDropdownToggle class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           {{user.name}}
+        </a>
+        <div ngbDropdownMenu class="dropdown-menu " aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink='/soldarts'>Sold Art</a>
+          <a class="dropdown-item" routerLink='/unsoldarts'>Unsold Art</a>
+          <a class="dropdown-item" routerLink='/selleraddart'>Add Art</a>
+          <a class="dropdown-item" routerLink='/myinfo'>My Info</a>
+          <a class="dropdown-item" routerLink='/swallet'>View Money</a>
+          <!-- <a class="dropdown-item" (click)="logout()">Logout</a> -->
+
+        </div>
+      </li>
+
+    </ul>
+
+
+
+     <!-- Dropdown List -->
+     <div ngbDropdown class="nav-item dropdown ">
+      <a ngbDropdownToggle class="nav-link dropdown-toggle"  id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff;">
+        Settings
+      </a>
+      <div ngbDropdownMenu class="dropdown-menu " aria-labelledby="navbarDropdown" >
+        <a class="dropdown-item" routerLink='/updateEmail'>Change Email</a>
+        <a class="dropdown-item" routerLink='/updatePassword'>Change Password</a>
+        <a class="dropdown-item" routerLink='/updatePhone'>Update Phone No.</a>
+        <a class="dropdown-item" routerLink='/changeAddress'>Update Address</a>
+      </div>
+    </div>
+
+    <div class="nav-item active">
+      <a class="nav-link" class="btn btn-outline-dark" (click)="logout()" style="margin-left: 8px;">Logout<span class="sr-only">(current)</span></a>
+    </div>
+    
+  </div>
+</nav>
+

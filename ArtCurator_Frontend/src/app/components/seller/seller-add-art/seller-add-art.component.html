@@ -1,0 +1,113 @@
+<app-nav-seller></app-nav-seller>
+<hr>
+<div class="container">
+  <div class="row">
+    <div *ngIf="productAdded">
+      <h2>Art Added...</h2>
+    </div>
+  </div>
+
+  <form>
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="guest-form-card card">
+          <div class="card-header text-center">
+            <h2>Add Art</h2>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input [(ngModel)]="addProduct.name" id="name" name="Name" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="price">Price</label>
+              <div class="input-group mb-3">
+                <span class="input-group-text">₹</span>
+                <input [(ngModel)]="addProduct.price" id="price" name="Price" type="number" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="category">Category</label>
+              <select [(ngModel)]="addProduct.category" id="category" name="Category" class="form-control">
+                <option value="Modern">Modern</option>
+                <option value="Period">Period</option>
+                <option value="Contemporary">Contemporary</option>
+                <option value="Abstract">Abstract</option>
+                <option value="Street">Street</option>
+                <option value="Impressionism">Impressionism</option>
+                <option value="Surrealism">Surrealism</option>
+                <option value="Expressionism">Expressionism</option>
+                <option value="Cubism">Cubism</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="description">Description</label>
+              <input [(ngModel)]="addProduct.description" id="description" name="Description" type="text"
+                class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="image">Upload Image</label>
+              <input type="file" class="form-control-file" id="image" (change)="onFileChanged($event)">
+            </div>
+            <div class="form-group">
+              <input type="button" class="btn btn-success btn-block"  (click)="onUpload()" value="Add Art">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+
+  <hr>
+  <app-footer></app-footer>
+
+  <!-- <app-nav-seller></app-nav-seller>
+<hr>
+<div class="container">
+  <div class="row">
+    <div *ngIf="productAdded">
+      <h2>Art Added...</h2>
+    </div>
+  </div>
+
+  <form>
+    <h1>Add Art</h1>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input [(ngModel)]="addProduct.name" id="name" name="Name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="price">Price</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text">₹</span>
+        <input [(ngModel)]="addProduct.price" id="price" name="Price" type="number" class="form-control">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select [(ngModel)]="addProduct.category" id="category" name="Category" class="form-control">
+        <option value="Modern">Modern</option>
+        <option value="Contemporary">Contemporary</option>
+        <option value="Abstract">Abstract</option>
+        <option value="Street Art">Street Art</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input [(ngModel)]="addProduct.description" id="description" name="Description" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="image">Upload Image</label>
+      <input type="file" class="form-control-file" id="image" (change)="onFileChanged($event)">
+    </div>
+    <div class="form-group">
+      <input type="button" class="form-control-file" (click)="onUpload()" value="Add Art">
+    </div>
+  </form>
+  
+  <hr>
+  <app-footer></app-footer> -->

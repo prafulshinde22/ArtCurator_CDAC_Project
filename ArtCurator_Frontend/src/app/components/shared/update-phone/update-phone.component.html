@@ -1,0 +1,51 @@
+<div *ngIf="isSeller">
+  <app-nav-seller></app-nav-seller>
+</div>
+
+<div *ngIf="isBuyer">
+  <app-nav-user></app-nav-user>
+</div>
+
+<hr />
+
+<div *ngIf="isUpdated">
+  <h3>Phone number updated.</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-5 offset-md-4">
+    <div class="guest-form-card card">
+
+      <div class="card-header text-center">
+        <h2>Update Phone Number</h2>
+      </div>
+
+      <div class="card-body">
+        <form [formGroup]="updatePhoneForm" (ngSubmit)="updatePhone()">
+
+          <div class="form-group">
+            <label for="phone">New Phone Number</label>
+            <input
+              id="phone"
+              class="form-control"
+              [ngClass]="{ 'is-invalid': updatePhoneForm.get('phone').touched && updatePhoneForm.get('phone').invalid }"
+              formControlName="phone"
+            />
+            <span class="invalid-feedback">Phone No. can't be blank.</span>
+          </div>
+
+
+
+
+
+          <button class="btn btn-primary btn-block" [disabled]="updatePhoneForm.invalid" >Submit</button>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

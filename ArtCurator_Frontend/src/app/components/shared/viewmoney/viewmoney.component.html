@@ -1,0 +1,44 @@
+<style>
+    .button {
+      background-color: #f44336;
+      /* Green */
+      border: none;
+      color: white;
+      padding: 8px 20px;
+      ;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;   
+  }
+
+  .button1 {
+      background-color: #f44336;
+      color: black;
+      border-radius: 4px;
+  }
+</style>
+
+<hr />
+
+<div class="container" style="max-width: 500px;">
+  <h2 class="text-center">Wallet</h2>
+  <div class="form-group">
+      <label for="amount">Wallet Balance:</label>
+      <input type="number" [(ngModel)]="initialAmount" placeholder={{initialAmount}} name="amount"
+          class="form-control" id="amount" readonly>
+  </div>
+  <br>
+  <div class="row-cols-1">
+    <div class="row-1">
+        <a *ngIf="isBuyer" (click)="updateWallet()" class="btn btn-outline-primary">Add To Wallet</a>
+       
+        <a (click)="backToHome()" style="margin-left: 8px;" class="btn btn-outline-danger">Back to home page</a>
+        <hr />
+    </div>
+
+</div>
+</div>
