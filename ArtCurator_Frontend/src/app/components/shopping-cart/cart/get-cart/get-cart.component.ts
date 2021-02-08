@@ -24,9 +24,11 @@ export class GetCartComponent implements OnInit {
   ngOnInit(): void {
     this.cartService.getAllCartItem()
     .subscribe(data=>{
-      this.cartList=data;
-      this.getCartImg();
-      this.getTotalAmt();
+      if(data!=null){
+        this.cartList=data;
+        this.getCartImg();
+        this.getTotalAmt();
+      }
     },
     error=>{
       this.message=error;

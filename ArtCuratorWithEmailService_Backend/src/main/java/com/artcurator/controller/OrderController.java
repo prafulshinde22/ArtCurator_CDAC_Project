@@ -39,7 +39,6 @@ public class OrderController {
 		if (orders.isEmpty()) {
 			throw new CustomArtCuratorException("No orders are currently added.", HttpStatus.NO_CONTENT);
 		}
-		orders.forEach(o->System.out.println(o.toString()));
 		return new ResponseEntity<>(orders, HttpStatus.OK);
 	}
 }

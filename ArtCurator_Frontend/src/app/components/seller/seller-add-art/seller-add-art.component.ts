@@ -34,7 +34,7 @@ export class SellerAddArtComponent implements OnInit {
         this.productAdded=true;
         setTimeout(()=>{
           this.router.navigateByUrl('/sellerhome');
-        },5000);
+        },3000);
       }
     );
   }

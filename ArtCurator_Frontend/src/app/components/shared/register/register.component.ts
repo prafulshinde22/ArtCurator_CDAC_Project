@@ -68,8 +68,9 @@ export class RegisterComponent implements OnInit {
       this.registerForm.get('phone').value, this.registerForm.get('dob').value, this.registerForm.get('role').value,
       this.registerForm.get('apartment').value, this.registerForm.get('street').value, this.registerForm.get('city').value,
       this.registerForm.get('state').value, this.registerForm.get('country').value, this.registerForm.get('pin').value)).subscribe(
-        response => {},
-        error => {});
+        response=> {},
+        error => {}
+      );
         this.registrationSuccess=true;
         setTimeout(()=>{
           this.router.navigateByUrl('/login');

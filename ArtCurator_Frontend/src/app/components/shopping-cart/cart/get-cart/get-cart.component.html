@@ -3,101 +3,13 @@
 
 <div class="container">
     <div>
+        <div class="row">
+            <div *ngIf="cartList.length==0">
+                <h2>Cart is empty...</h2>
+            </div>
+        </div>
         <div *ngIf="cartList.length>0">
-
-
             <html>
-            <style>
-                .button {
-                    background-color: #f44336;
-                    /* Green */
-                    border: none;
-                    color: white;
-                    padding: 8px 20px;
-                    ;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    transition-duration: 0.4s;
-                    cursor: pointer;
-                }
-
-                .button1 {
-                    background-color: #f44336;
-                    color: black;
-                    border-radius: 4px;
-
-
-                }
-
-                .button1:hover {
-                    background-color: #008CBA;
-                    color: white;
-                }
-
-
-                .button2 {
-                    background-color: #FFD700;
-                    color: black;
-                    border-radius: 4px;
-
-                }
-
-                .button2:hover {
-                    background-color: #FF0000;
-                    color: white;
-                }
-
-                h2 {
-                    text-align: center;
-                }
-
-
-                #addproduct {
-                    font-family: Arial, Helvetica, sans-serif;
-                    border-collapse: collapse;
-                    width: 100%;
-                    text-align: center;
-                }
-
-                #addproduct td,
-                #addproduct th {
-                    border: 1px solid #ddd;
-                    padding: 8px;
-                    text-align: center;
-                }
-
-                #addproduct tr:nth-child(even) {
-                    background-color: #f2f2f2;
-                }
-
-                #addproduct tr:hover {
-                    background-color: #ddd;
-                }
-
-                #addproduct th {
-                    padding-top: 12px;
-                    padding-bottom: 12px;
-                    text-align: left;
-                    background-color: #4CAF50;
-                    color: white;
-                    text-align: center;
-                }
-
-                td,
-                th,
-                tr {
-                    text-align: center;
-                }
-
-
-                .center {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            </style>
 
             <body>
                 <div class="row">
@@ -119,9 +31,6 @@
                         <div *ngIf="totalAmount">
                             <h2>Your Cart Total is {{totalAmount}}</h2>
                         </div>
-                    </div>
-                    <div *ngIf="cartList.length==0">
-                        <h2>Your Cart is Empty</h2>
                     </div>
                     <div *ngIf="cartList.length>0">
                         <table id="addproduct" class="center" style="width:80%;">

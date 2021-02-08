@@ -21,13 +21,12 @@ import com.artcurator.pojos.User;
 @Service
 @Transactional
 public class UserServiceImpl implements IUserService {
-
+	//@Autowired
+	//private MailService mailRepo;
 	@Autowired
 	private UserRepository userRepo;
-
 	@Autowired
 	private BCryptPasswordEncoder encoder;
-
 	@Autowired
 	AddressRespository addressRepository;
 
@@ -87,7 +86,6 @@ public class UserServiceImpl implements IUserService {
 			userOptional.get().setPhone(phone);
 			return true;
 		}
-		
 		//throw new CustomArtCuratorException("User not found.", HttpStatus.NOT_FOUND);
 		return false;
 	}
@@ -131,6 +129,15 @@ public class UserServiceImpl implements IUserService {
 		user.addAddress(address);
 		user.setPassword(encoder.encode(user.getPassword()));
 		userRepo.save(user);
+//		if(userRepo.save(user)==null) {return "Failed";}
+//		Mail mail = new Mail();
+//        mail.setMailFrom("artcurator.arts.web@gmail.com");
+//        mail.setMailTo(user.getEmail());
+//        mail.setMailSubject("Signup-Status-From-ArtCurator");
+//        mail.setMailContent("Signup Successful At ArtCurator.Web\nYour Deatils : "
+//        		+ "\nName : "+user.getName()+"\nEmail : "+user.getEmail()+"\nPhone : "+user.getPhone()
+//        +"\nAddress : "+address.getApartment()+","+address.getStreet()+","+address.getCity()+","+address.getState()+","+address.getCountry()+"-"+address.getPin());
+//        mailRepo.sendEmail(mail);
 		return "Sign up successful.";
 	}
 

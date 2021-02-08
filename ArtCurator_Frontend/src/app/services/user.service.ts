@@ -23,12 +23,8 @@ export class UserService {
 
   constructor(private router: Router, private http: HttpClient) { }
 
-  addUser(dto: UserRegistration): Observable<String> {
-    console.log("IN USER ADD ");
-    return this.http.post<any>(this.baseUrl + '/signup', dto).pipe(map(response => {
-      console.log("Response " + response.message);
-      return response;
-    }));
+  addUser(dto: UserRegistration) {
+    return this.http.post<any>(this.baseUrl + '/signup', dto);
   }
 
   authenticate(req: Login): Observable<String> {
